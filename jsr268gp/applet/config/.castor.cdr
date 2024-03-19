@@ -1,0 +1,4 @@
+#Thu Aug 02 18:14:32 CEST 2007
+benchs.lib.config.Package=benchs.lib.config.PackageDescriptor
+benchs.lib.config.Applet=benchs.lib.config.AppletDescriptor
+benchs.lib.config.TestConfig=benchs.lib.config.TestConfigDescriptor

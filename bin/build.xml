@@ -1,0 +1,56 @@
+<project name="JSR268TK" basedir=".." default="main">
+
+    <property name="src.dir"     value="jsr268gp"/>
+
+    <property name="build.dir"   value="jsr268gp"/>
+    <property name="classes.dir" value="jsr268gp"/>
+
+<!--    <property name="main-class"  value="oata.HelloWorld"/> -->
+
+
+	
+	
+    <property name="lib.dir"     value="lib"/>
+
+    <path id="classpath">
+        <fileset dir="${lib.dir}" includes="**/*.jar"/>
+        <fileset dir="." includes="**/*.class" />
+    </path>
+
+
+    <target name="main" depends="deleter,loader,run"/>
+
+
+    <target name="run">
+        <java classname="jsr268gp.sampleclient.SampleClient"
+        	classpath="${lib.dir}:."
+        	fork="true">
+    	<classpath>
+        <path refid="classpath"/>
+    	</classpath>
+    	</java>
+    </target>	
+	
+    <target name="loader">
+        <java classname="jsr268gp.main.Load"
+        	classpath="${lib.dir}:."
+        	fork="true">
+    	<classpath>
+        <path refid="classpath"/>
+        <path location="jsr268gp.main.Load"/>
+    	</classpath>
+    	</java>
+    </target>
+	
+    <target name="deleter">
+        <java classname="jsr268gp.main.Delete"
+        	classpath="${lib.dir}:."
+        	fork="true">
+    	<classpath>
+        <path refid="classpath"/>
+        <path location="jsr268gp.main.Delete"/>
+    	</classpath>
+    	</java>
+    </target>
+
+</project>

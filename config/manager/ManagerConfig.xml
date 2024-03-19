@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+
+
+<managerConfig>
+  <!-- <cad>SCM Microsystems Inc. CHIPDRIVE Serial 0</cad> -->
+  <!-- <cad>Texas Instruments SmartCardSlot 0</cad> -->
+  <!-- <cad>OMNIKEY CardMan 2020 0</cad> --> 
+<!--  <cad>Towitoko Chipdrive Micro 00 00</cad>-->
+ <cad>ACS ACR1281 1S Dual Reader PICC 0</cad>
+
+ <!-- <cad>Gemplus USB Smart Card Reader 0</cad> --> 
+  <!-- <cad>jsr268gp.cad.JCOPCAD:</cad> -->
+  <!-- <cad>Gemplus GemPC Twin 00 00</cad> -->
+<!--  <cad> FSC SCR USB 2A 0</cad> -->
+  
+ 
+  <!-- <cad>lib.cad.UltraSmartCAD:ULTRASMART:NODEID=123,TIMING=Application,WTXTIMEOUT=false</cad> -->
+
+  <cardConfig>../cards/CardConfig.xml</cardConfig> 
+   
+  <applets>
+	
+	<applet appletConfig="jsr268gp/sampleapplet/AppletConfig.xml"></applet>
+	
+  </applets>
+</managerConfig>

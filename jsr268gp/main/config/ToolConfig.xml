@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<Manager>
+
+	<config name="template" description="this is not a configuration but a template for others configurations.">
+		<help/>
+		<warning/>
+		
+		<log>log/log.txt</log>
+		<verbose/>
+		<verboseLevel>10</verboseLevel>
+		<verboseFilter>1</verboseFilter>
+		
+		<input>config/ManagerConfig.xml</input>
+		<xmloutput>log/results.xml</xmloutput>
+		<textoutput>log/results.csv</textoutput>
+	</config>
+
+	<!-- Default configuration. Should always be defined. -->
+	<config name="default" description="Normal behavior">
+		<verbose/>
+		<verboseLevel>4</verboseLevel>
+	</config>
+
+</Manager>

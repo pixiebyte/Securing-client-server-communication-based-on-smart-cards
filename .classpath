@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path=""/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/castor-1.0.3.jar"/>
+	<classpathentry kind="lib" path="lib/xerces-J_1.4.0.jar"/>
+	<classpathentry kind="lib" path="lib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/api.jar"/>
+	<classpathentry kind="lib" path="lib/offcard.jar"/>
+	<classpathentry kind="lib" path="C:/JCDK/java_card_kit-2_2_2/lib/apduio.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

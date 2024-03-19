@@ -1,0 +1,38 @@
+Cet outil a ete developpe dans l'unique but de faciliter des tps de javacard
+avec Eclipse avec Java 6up3.
+
+Les fichiers interressants pour les utilisateurs ici sont :
+
+ * jsr268gp/config/manager/ManagerConfig.xml qui precise entre autres, le
+ nom du lecteur (/etc/reader.conf sous linux) et les emplacements des
+ fichiers xml dont le but est d'aider au chargement d'applets
+
+Le nom du lecteur :
+    * Sous Windows XP, situé dans la clef de registre
+    * HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\Calais\Readers
+    * Sous Linux avec PCSC-Lite, le "FRIENDLYNAME" du fichier
+    * /etc/reader.conf
+
+ 
+ * jsr268gp/sampleapplet/
+   contient un exemple d'applet :
+    * AppletConfig.xml
+      Contient la description de ce qu'il faudra charger/decharger
+    * SampleTestApplet.java
+      Le code d'une applet (ici vide)
+    * build.xml
+      Le fichier Ant qui permet de convertir l'applet. Le resultat de la
+      conversion, c'est a dire, en particulier, le fichier .cap se trouve
+      dans jsr268gp/sampleapplet/javacard. Tout ce qui est contenu dans
+      le fichier xml est important (les noms, et les AIDs).
+      
+ * bin/loader.sh
+   bin/loader.bat
+   permet de charger l'applet sur la carte.
+   
+ * bin/deleter.sh
+ * bin/deleter.bat
+   permet d'effacer l'applet de la carte. Il est necessaire d'effacer
+   l'applet avant chaque nouveau chargement. Il faut se trouver dans
+   le repertoire bin pour lancer ces deux dernieres taches.
+   
