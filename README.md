@@ -1,2 +1,2 @@
 # PRJP-18
-sécurisation d'un canal de communication Client-Serveur a base des cartes a puces
+Sécurisation d'un canal de communication Client-Serveur à base des cartes à puce
